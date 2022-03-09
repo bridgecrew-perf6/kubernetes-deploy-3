@@ -14,10 +14,10 @@ kind: ClusterRole
 metadata:
   name: cluster-autoscaler
   labels:
-    k8s-addon: cluster-autoscaler.addons.k8s.io
-    k8s-app: cluster-autoscaler
+        k8s-addon: cluster-autoscaler.addons.k8s.io
+     k8s-app: cluster-autoscaler
 rules:
-  - apiGroups: [""]
+  apiGroups: [""]
     resources: ["events", "endpoints"]
     verbs: ["create", "patch"]
   - apiGroups: [""]
@@ -25,7 +25,7 @@ rules:
     verbs: ["create"]
   - apiGroups: [""]
     resources: ["pods/status"]
-    verbs: ["update"]
+        verbs: ["update"]
   - apiGroups: [""]
     resources: ["endpoints"]
     resourceNames: ["cluster-autoscaler"]
