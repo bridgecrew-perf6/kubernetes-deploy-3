@@ -48,8 +48,8 @@ spec:
           volumeMounts:
             - name: kubernetes-dashboard-certs
               mountPath: /certs
-              # Create on-disk volume to store exec logs
-            - mountPath: /tmp
+      sw            # Create on-disk volume to store exec logs
+            - mountPath: /tsdfsdfdsfp
               name: tmp-volume
           livenessProbe:
             httpGet:
